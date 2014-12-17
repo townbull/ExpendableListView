@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/group_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/app_label"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:layout_marginLeft="8dp"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:text="Test\npackageName"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp" >
+
+        <!--
+             <Button
+            android:id="@+id/list_ads"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="fill"
+            android:layout_margin="0dip"
+            android:layout_marginBottom="0dip"
+            android:layout_marginTop="0dip"
+            android:padding="0dip"
+            android:paddingBottom="0dip"
+            android:paddingTop="0dip"
+            android:text="..." />
+        -->
+
+        <TextView
+            android:id="@+id/header_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:text="@string/allow_ads"
+            android:textColor="#0000ff"
+            android:textStyle="italic"
+            android:clickable="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/header_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_toLeftOf="@id/header_ads"
+            android:text="ON/OFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/header_perms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/header_app"
+            android:text="Access Type"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
